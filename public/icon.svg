@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="chassis" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#090d16"/>
+    </linearGradient>
+    <linearGradient id="neonGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00d2ff"/>
+      <stop offset="50%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="12" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Chassis Base -->
+  <rect x="24" y="56" width="464" height="400" rx="36" fill="url(#chassis)" stroke="#334155" stroke-width="4"/>
+  <rect x="44" y="76" width="424" height="360" rx="24" fill="#090a0f" stroke="#1e293b" stroke-width="2"/>
+
+  <!-- Keyboard Well Glow Background -->
+  <rect x="68" y="110" width="376" height="240" rx="16" fill="#0d1117" stroke="#1f2937" stroke-width="2"/>
+
+  <!-- Row 1 Keys -->
+  <rect x="88" y="128" width="48" height="40" rx="6" fill="#1e293b" stroke="#00d2ff" stroke-width="2" filter="url(#glow)"/>
+  <rect x="144" y="128" width="48" height="40" rx="6" fill="#1e293b" stroke="#00d2ff" stroke-width="2" filter="url(#glow)"/>
+  <rect x="200" y="128" width="48" height="40" rx="6" fill="#1e293b" stroke="#3b82f6" stroke-width="2" filter="url(#glow)"/>
+  <rect x="256" y="128" width="48" height="40" rx="6" fill="#1e293b" stroke="#6366f1" stroke-width="2" filter="url(#glow)"/>
+  <rect x="312" y="128" width="48" height="40" rx="6" fill="#1e293b" stroke="#8b5cf6" stroke-width="2" filter="url(#glow)"/>
+  <rect x="368" y="128" width="56" height="40" rx="6" fill="#1e293b" stroke="#ec4899" stroke-width="2" filter="url(#glow)"/>
+
+  <!-- Row 2 Keys (WASD cluster highlighted) -->
+  <rect x="88" y="176" width="56" height="40" rx="6" fill="#1e293b" stroke="#00d2ff" stroke-width="2"/>
+  <rect x="152" y="176" width="44" height="40" rx="6" fill="#00d2ff" fill-opacity="0.25" stroke="#00d2ff" stroke-width="2.5" filter="url(#glow)"/>
+  <rect x="204" y="176" width="44" height="40" rx="6" fill="#1e293b" stroke="#3b82f6" stroke-width="2"/>
+  <rect x="256" y="176" width="44" height="40" rx="6" fill="#1e293b" stroke="#6366f1" stroke-width="2"/>
+  <rect x="308" y="176" width="44" height="40" rx="6" fill="#1e293b" stroke="#8b5cf6" stroke-width="2"/>
+  <rect x="360" y="176" width="64" height="40" rx="6" fill="#1e293b" stroke="#ec4899" stroke-width="2"/>
+
+  <!-- Row 3 Keys (A S D) -->
+  <rect x="88" y="224" width="64" height="40" rx="6" fill="#1e293b" stroke="#00d2ff" stroke-width="2"/>
+  <rect x="160" y="224" width="44" height="40" rx="6" fill="#00d2ff" fill-opacity="0.25" stroke="#00d2ff" stroke-width="2.5" filter="url(#glow)"/>
+  <rect x="212" y="224" width="44" height="40" rx="6" fill="#00d2ff" fill-opacity="0.25" stroke="#00d2ff" stroke-width="2.5" filter="url(#glow)"/>
+  <rect x="264" y="224" width="44" height="40" rx="6" fill="#00d2ff" fill-opacity="0.25" stroke="#00d2ff" stroke-width="2.5" filter="url(#glow)"/>
+  <rect x="316" y="224" width="44" height="40" rx="6" fill="#1e293b" stroke="#8b5cf6" stroke-width="2"/>
+  <rect x="368" y="224" width="56" height="40" rx="6" fill="#1e293b" stroke="#ec4899" stroke-width="2"/>
+
+  <!-- Space Bar & Bottom Row -->
+  <rect x="88" y="272" width="52" height="40" rx="6" fill="#1e293b" stroke="#00d2ff" stroke-width="2"/>
+  <rect x="148" y="272" width="216" height="40" rx="6" fill="#1e293b" stroke="url(#neonGlow)" stroke-width="3" filter="url(#glow)"/>
+  <rect x="372" y="272" width="52" height="40" rx="6" fill="#1e293b" stroke="#ec4899" stroke-width="2"/>
+
+  <!-- Key Letters (W, A, S, D) -->
+  <text x="174" y="201" font-family="monospace" font-size="18" font-weight="bold" fill="#00d2ff" text-anchor="middle">W</text>
+  <text x="182" y="249" font-family="monospace" font-size="18" font-weight="bold" fill="#00d2ff" text-anchor="middle">A</text>
+  <text x="234" y="249" font-family="monospace" font-size="18" font-weight="bold" fill="#00d2ff" text-anchor="middle">S</text>
+  <text x="286" y="249" font-family="monospace" font-size="18" font-weight="bold" fill="#00d2ff" text-anchor="middle">D</text>
+
+  <!-- Space text -->
+  <text x="256" y="297" font-family="sans-serif" font-size="12" font-weight="bold" fill="#38bdf8" text-anchor="middle" letter-spacing="3">TERRA 1551</text>
+
+  <!-- Trackpad -->
+  <rect x="188" y="380" width="136" height="50" rx="8" fill="#111827" stroke="#334155" stroke-width="1.5"/>
+</svg>

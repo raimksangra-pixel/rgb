@@ -1,6 +1,7 @@
 import React from 'react';
 import { KeyboardLayoutType } from '../types/keyboard';
-import { Power, Volume2, VolumeX, Laptop, Sparkles } from 'lucide-react';
+import { Power, Volume2, VolumeX, Laptop } from 'lucide-react';
+import { PWAInstallButton } from './PWAInstallButton';
 
 interface HeaderProps {
   activeTab: 'studio' | 'profiles' | 'typing' | 'bridge';
@@ -89,6 +90,9 @@ export const Header: React.FC<HeaderProps> = ({
 
         {/* Zone 3: Primary actions */}
         <div className="flex items-center gap-2 sm:gap-3">
+          {/* PWA Laptop Install Button */}
+          <PWAInstallButton />
+
           {/* ISO / ANSI Layout toggle */}
           <div className="flex items-center p-0.5 bg-neutral-950/60 border border-neutral-800 rounded-md">
             <button

@@ -16,6 +16,7 @@ import { EffectsControls } from './components/EffectsControls';
 import { ProfileManager } from './components/ProfileManager';
 import { TypingChamber } from './components/TypingChamber';
 import { HardwareBridge } from './components/HardwareBridgeModal';
+import { OfflineIndicator } from './components/OfflineIndicator';
 
 const STORAGE_KEY_PROFILES = 'terra_1551_rgb_profiles';
 const STORAGE_KEY_ACTIVE_ID = 'terra_1551_active_profile_id';
@@ -431,6 +432,8 @@ export default function App() {
           </div>
         </div>
       )}
+      {/* Offline Mode Indicator */}
+      <OfflineIndicator />
     </div>
   );
 }
