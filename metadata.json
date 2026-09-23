@@ -1,0 +1,6 @@
+{
+  "name": "Terra 1551 RGB Studio",
+  "description": "Advanced RGB keyboard lighting control center, dynamic effects studio, and preset profile manager designed for Wortmann TERRA Mobile 1551 laptops.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
